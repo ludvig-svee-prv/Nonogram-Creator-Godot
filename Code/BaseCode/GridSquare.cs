@@ -18,12 +18,12 @@ public class GridSquare : ColorRect
 		}
 	}
 
-	public int CurrentColorIndex { get; private set; }
+	public int CurrentColorIndex { get; private set; } = 0;
 
 	public override void _Ready()
 	{
 		// All grids are always three steps up in hiearchy.
-		connectedGrid = GetParent().GetParent().GetParent<Grid>();
+		connectedGrid = GetNode<Grid>("/root/Base/Grid");
 
 		cross = GetNode<TextureRect>("Cross");
 
@@ -70,6 +70,11 @@ public class GridSquare : ColorRect
 	public void HideCross()
 	{
 		cross.Visible = false;
+	}
+
+	public void ToggleCross()
+	{
+		cross.Visible = !cross.Visible;
 	}
 
 	public void ResetSquare()

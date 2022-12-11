@@ -3,7 +3,6 @@ using System;
 
 public class ColorSelect : ColorRect
 {
-	DesignGrid designGrid;
 	ColorRect colorSquare;
 
 	ColorEnabler colorEnabler;
@@ -17,7 +16,6 @@ public class ColorSelect : ColorRect
 
 	public override void _Ready()
 	{
-		designGrid = GetNode<DesignGrid>("/root/Create/CreateGrid");
 		colorSquare = GetNode<ColorRect>("ColorRect");
 
 		colorEnabler = GetParent<ColorEnabler>();

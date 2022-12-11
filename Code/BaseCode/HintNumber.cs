@@ -7,7 +7,8 @@ public class HintNumber : ColorRect
 
 	public override void _Ready()
 	{
-		
+		numberText = GetNode<Label>("Label");
+		Visible = false;
 	}
 
 	public void SetHintNumber(int number, int color)

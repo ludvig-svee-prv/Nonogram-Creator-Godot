@@ -29,11 +29,11 @@ public class ColorEnabler : GridContainer
 
 	ColorSelect[] colorSquares;
 
-	private DesignGrid grid;
+	private Grid grid;
 
 	public override void _Ready()
 	{
-		grid = GetNode<DesignGrid>("../CreateGrid");
+		grid = GetNode<Grid>("../Grid");
 
 		int childCount = GetChildCount();
 		colorSquares = new ColorSelect[childCount];
@@ -45,7 +45,7 @@ public class ColorEnabler : GridContainer
 	}
 
 
-	private void ToggleColor(bool button_pressed)
+	public void ToggleColor(bool button_pressed)
 	{
 		grid.ToggleColor(button_pressed);
 		Modulate = button_pressed ? enabledColor : disabledColor;

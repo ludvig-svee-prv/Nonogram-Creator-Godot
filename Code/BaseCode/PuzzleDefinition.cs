@@ -203,7 +203,7 @@ public class PuzzleDefinition
             {
                 GridSquare g = isVertical ? currentSquareGrid[mainLine, secLine] : currentSquareGrid[secLine, mainLine];
 
-                if (g.CrossIsShowing)
+                if (g.CurrentColorIndex > 0)
                 {
                     currentCount += 1;
                 }

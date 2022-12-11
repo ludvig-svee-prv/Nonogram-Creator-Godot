@@ -3,9 +3,6 @@ using System;
 
 public class DesignGrid : Grid
 {
-	public bool ColorIsEnabled { get; private set; } = false;
-	public int CurrentColorIndex { get; private set; } = 0;
-
 	private CheckBox is5x5Button;
 
 	private Control gridHolder5x5;
@@ -83,12 +80,12 @@ public class DesignGrid : Grid
 		{
 			for (int y = 0; y < variableHolder.CurrentPuzzleDefinition.GridSize; y++)
 			{
-				int colorIndex = variableHolder.CurrentPuzzleDefinition.GridDefinition[x,y];
+				int colorIndex = variableHolder.CurrentPuzzleDefinition.GridDefinition[x, y];
 				if (colorIndex == -1)
 				{
 					colorIndex = 0;
 				}
-				currentSquareGrid[x,y].SetColor(colorIndex);
+				currentSquareGrid[x, y].SetColor(colorIndex);
 			}
 		}
 	}
@@ -112,28 +109,16 @@ public class DesignGrid : Grid
 		}
 		else
 		{
-			currentSquareGrid[x, y].ShowCross();
+			currentSquareGrid[x, y].SetColor(1);
 		}
 	}
 
 	public override void SquareClickedErase(int x, int y)
 	{
-		if (ColorIsEnabled)
-		{
-			currentSquareGrid[x, y].ResetColor();
-		}
-		else
-		{
-			currentSquareGrid[x, y].HideCross();
-		}
+		currentSquareGrid[x, y].ResetColor();
 	}
 
-	public void SetColor(int colorIndex)
-	{
-		CurrentColorIndex = colorIndex;
-	}
-
-	public void ToggleColor(bool colorShouldBeActive)
+	public override void ToggleColor(bool colorShouldBeActive)
 	{
 		if (ColorIsEnabled == colorShouldBeActive)
 		{
@@ -161,8 +146,8 @@ public class DesignGrid : Grid
 
 		savePuzzlePopup.ShowPopup(puzzleDefinition);
 	}
-	
-		
+
+
 	private void GoToMainMenu()
 	{
 		GetTree().ChangeScene("res://Scenes/StartScene.tscn");

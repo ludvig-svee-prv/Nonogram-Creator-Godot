@@ -31,7 +31,7 @@ use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 5 )
 
-[node name="Control" type="Panel"]
+[node name="Base" type="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 
@@ -44,7 +44,7 @@ size_flags_vertical = 3
 custom_fonts/font = SubResource( 1 )
 text = "Quit"
 
-[node name="GoBack2" type="Button" parent="."]
+[node name="Reset" type="Button" parent="."]
 anchor_left = 0.0197917
 anchor_top = 0.871296
 anchor_right = 0.15625
@@ -79,147 +79,88 @@ anchor_left = 0.792188
 anchor_top = 0.0379634
 anchor_right = 0.930729
 anchor_bottom = 0.10463
-margin_left = -16.0
-margin_top = 40.0
-margin_right = -117.999
-margin_bottom = 4.0
+margin_left = -110.001
+margin_top = 39.9995
+margin_right = -132.0
+margin_bottom = 3.9996
 rect_scale = Vector2( 2, 2 )
 size_flags_horizontal = 3
 custom_fonts/font = SubResource( 2 )
-text = "Has Colors: True"
+text = "Is Colors puzzle: True"
+align = 1
 
 [node name="Colors" type="GridContainer" parent="."]
 anchor_left = 0.508854
 anchor_top = 0.235185
 anchor_right = 0.519271
 anchor_bottom = 0.323148
-margin_left = 539.0
-margin_top = -79.0
-margin_right = 671.0
+margin_left = 452.0
+margin_top = -78.9998
+margin_right = 651.0
 margin_bottom = 205.0
 rect_scale = Vector2( 2, 2 )
 columns = 2
 script = ExtResource( 4 )
 
-[node name="Color" parent="Colors" instance=ExtResource( 7 )]
-margin_right = 74.0
-margin_bottom = 44.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color2" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_right = 152.0
-margin_bottom = 44.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color3" parent="Colors" instance=ExtResource( 7 )]
-margin_top = 48.0
-margin_right = 74.0
+[node name="1" parent="Colors" instance=ExtResource( 7 )]
+margin_right = 108.0
 margin_bottom = 92.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color4" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 48.0
-margin_right = 152.0
+[node name="2" parent="Colors" instance=ExtResource( 7 )]
+margin_left = 112.0
+margin_right = 219.0
 margin_bottom = 92.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color5" parent="Colors" instance=ExtResource( 7 )]
+[node name="3" parent="Colors" instance=ExtResource( 7 )]
 margin_top = 96.0
-margin_right = 74.0
-margin_bottom = 140.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color6" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 96.0
-margin_right = 152.0
-margin_bottom = 140.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color7" parent="Colors" instance=ExtResource( 7 )]
-margin_top = 144.0
-margin_right = 74.0
+margin_right = 108.0
 margin_bottom = 188.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color8" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 144.0
-margin_right = 152.0
+[node name="4" parent="Colors" instance=ExtResource( 7 )]
+margin_left = 112.0
+margin_top = 96.0
+margin_right = 219.0
 margin_bottom = 188.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color9" parent="Colors" instance=ExtResource( 7 )]
+[node name="5" parent="Colors" instance=ExtResource( 7 )]
 margin_top = 192.0
-margin_right = 74.0
-margin_bottom = 236.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color10" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 192.0
-margin_right = 152.0
-margin_bottom = 236.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color11" parent="Colors" instance=ExtResource( 7 )]
-margin_top = 240.0
-margin_right = 74.0
+margin_right = 108.0
 margin_bottom = 284.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color12" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 240.0
-margin_right = 152.0
+[node name="6" parent="Colors" instance=ExtResource( 7 )]
+margin_left = 112.0
+margin_top = 192.0
+margin_right = 219.0
 margin_bottom = 284.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color13" parent="Colors" instance=ExtResource( 7 )]
+[node name="7" parent="Colors" instance=ExtResource( 7 )]
 margin_top = 288.0
-margin_right = 74.0
-margin_bottom = 332.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color14" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 288.0
-margin_right = 152.0
-margin_bottom = 332.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Color15" parent="Colors" instance=ExtResource( 7 )]
-margin_top = 336.0
-margin_right = 74.0
+margin_right = 108.0
 margin_bottom = 379.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Color16" parent="Colors" instance=ExtResource( 7 )]
-margin_left = 78.0
-margin_top = 336.0
-margin_right = 152.0
+[node name="8" parent="Colors" instance=ExtResource( 7 )]
+margin_left = 112.0
+margin_top = 288.0
+margin_right = 219.0
 margin_bottom = 379.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="PlayingGrid" parent="." instance=ExtResource( 1 )]
+[node name="Grid" parent="." instance=ExtResource( 1 )]
 anchor_left = 0.269532
 anchor_top = 0.122685
 anchor_right = 0.613802
@@ -267,7 +208,7 @@ margin_bottom = -16.0
 custom_fonts/font = SubResource( 8 )
 text = "Go back to main menu"
 
-[node name="Button2" type="Button" parent="CompletedPopup/Panel"]
+[node name="ViewSolution" type="Button" parent="CompletedPopup/Panel"]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
@@ -296,77 +237,153 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="10x10" type="HBoxContainer" parent="CompletedPopup/ViewGrid/Grid"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="X_1" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+[node name="X_0" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_right = 62.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_right = 62.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 65.0
 margin_right = 62.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 131.0
 margin_right = 62.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 197.0
 margin_right = 62.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 263.0
 margin_right = 62.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 329.0
 margin_right = 62.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 395.0
 margin_right = 62.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 461.0
 margin_right = 62.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
 margin_top = 527.0
 margin_right = 62.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_0"]
+margin_top = 593.0
+margin_right = 62.0
+margin_bottom = 655.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="X_1" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+margin_left = 66.0
+margin_right = 128.0
+margin_bottom = 655.0
+size_flags_horizontal = 3
+
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_right = 62.0
+margin_bottom = 61.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 65.0
+margin_right = 62.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 131.0
+margin_right = 62.0
+margin_bottom = 193.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 197.0
+margin_right = 62.0
+margin_bottom = 259.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 263.0
+margin_right = 62.0
+margin_bottom = 325.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 329.0
+margin_right = 62.0
+margin_bottom = 391.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 395.0
+margin_right = 62.0
+margin_bottom = 457.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 461.0
+margin_right = 62.0
+margin_bottom = 523.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
+margin_top = 527.0
+margin_right = 62.0
+margin_bottom = 589.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_1"]
 margin_top = 593.0
 margin_right = 62.0
 margin_bottom = 655.0
@@ -374,374 +391,374 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="X_2" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
-margin_left = 66.0
-margin_right = 128.0
-margin_bottom = 655.0
-size_flags_horizontal = 3
-
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_right = 62.0
-margin_bottom = 61.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 65.0
-margin_right = 62.0
-margin_bottom = 127.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 131.0
-margin_right = 62.0
-margin_bottom = 193.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 197.0
-margin_right = 62.0
-margin_bottom = 259.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 263.0
-margin_right = 62.0
-margin_bottom = 325.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 329.0
-margin_right = 62.0
-margin_bottom = 391.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 395.0
-margin_right = 62.0
-margin_bottom = 457.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 461.0
-margin_right = 62.0
-margin_bottom = 523.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 527.0
-margin_right = 62.0
-margin_bottom = 589.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
-margin_top = 593.0
-margin_right = 62.0
-margin_bottom = 655.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="X_3" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 132.0
 margin_right = 195.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_right = 63.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 65.0
 margin_right = 63.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 131.0
 margin_right = 63.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 197.0
 margin_right = 63.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 263.0
 margin_right = 63.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 329.0
 margin_right = 63.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 395.0
 margin_right = 63.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 461.0
 margin_right = 63.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 527.0
 margin_right = 63.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_2"]
 margin_top = 593.0
 margin_right = 63.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="X_4" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+[node name="X_3" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 199.0
 margin_right = 261.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_right = 62.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 65.0
 margin_right = 62.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 131.0
 margin_right = 62.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 197.0
 margin_right = 62.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 263.0
 margin_right = 62.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 329.0
 margin_right = 62.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 395.0
 margin_right = 62.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 461.0
 margin_right = 62.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 527.0
 margin_right = 62.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_3"]
 margin_top = 593.0
 margin_right = 62.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="X_5" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+[node name="X_4" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 265.0
 margin_right = 328.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_right = 63.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 65.0
 margin_right = 63.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 131.0
 margin_right = 63.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 197.0
 margin_right = 63.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 263.0
 margin_right = 63.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 329.0
 margin_right = 63.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 395.0
 margin_right = 63.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 461.0
 margin_right = 63.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 527.0
 margin_right = 63.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_4"]
 margin_top = 593.0
 margin_right = 63.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="X_6" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+[node name="X_5" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 332.0
 margin_right = 394.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_right = 62.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 65.0
 margin_right = 62.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 131.0
 margin_right = 62.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 197.0
 margin_right = 62.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 263.0
 margin_right = 62.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 329.0
 margin_right = 62.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 395.0
 margin_right = 62.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 461.0
 margin_right = 62.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
 margin_top = 527.0
 margin_right = 62.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_5"]
+margin_top = 593.0
+margin_right = 62.0
+margin_bottom = 655.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="X_6" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+margin_left = 398.0
+margin_right = 460.0
+margin_bottom = 655.0
+size_flags_horizontal = 3
+
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_right = 62.0
+margin_bottom = 61.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 65.0
+margin_right = 62.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 131.0
+margin_right = 62.0
+margin_bottom = 193.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 197.0
+margin_right = 62.0
+margin_bottom = 259.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 263.0
+margin_right = 62.0
+margin_bottom = 325.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 329.0
+margin_right = 62.0
+margin_bottom = 391.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 395.0
+margin_right = 62.0
+margin_bottom = 457.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 461.0
+margin_right = 62.0
+margin_bottom = 523.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
+margin_top = 527.0
+margin_right = 62.0
+margin_bottom = 589.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_6"]
 margin_top = 593.0
 margin_right = 62.0
 margin_bottom = 655.0
@@ -749,299 +766,224 @@ size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="X_7" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
-margin_left = 398.0
-margin_right = 460.0
-margin_bottom = 655.0
-size_flags_horizontal = 3
-
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_right = 62.0
-margin_bottom = 61.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 65.0
-margin_right = 62.0
-margin_bottom = 127.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 131.0
-margin_right = 62.0
-margin_bottom = 193.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 197.0
-margin_right = 62.0
-margin_bottom = 259.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 263.0
-margin_right = 62.0
-margin_bottom = 325.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 329.0
-margin_right = 62.0
-margin_bottom = 391.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 395.0
-margin_right = 62.0
-margin_bottom = 457.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 461.0
-margin_right = 62.0
-margin_bottom = 523.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 527.0
-margin_right = 62.0
-margin_bottom = 589.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
-margin_top = 593.0
-margin_right = 62.0
-margin_bottom = 655.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="X_8" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 464.0
 margin_right = 527.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_right = 63.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 65.0
 margin_right = 63.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 131.0
 margin_right = 63.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 197.0
 margin_right = 63.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 263.0
 margin_right = 63.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 329.0
 margin_right = 63.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 395.0
 margin_right = 63.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 461.0
 margin_right = 63.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 527.0
 margin_right = 63.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_7"]
 margin_top = 593.0
 margin_right = 63.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="X_9" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+[node name="X_8" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 531.0
 margin_right = 593.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_right = 62.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 65.0
 margin_right = 62.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 131.0
 margin_right = 62.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 197.0
 margin_right = 62.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 263.0
 margin_right = 62.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 329.0
 margin_right = 62.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 395.0
 margin_right = 62.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 461.0
 margin_right = 62.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 527.0
 margin_right = 62.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_8"]
 margin_top = 593.0
 margin_right = 62.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="X_10" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
+[node name="X_9" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/10x10"]
 margin_left = 597.0
 margin_right = 660.0
 margin_bottom = 655.0
 size_flags_horizontal = 3
 
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_right = 63.0
 margin_bottom = 61.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 65.0
 margin_right = 63.0
 margin_bottom = 127.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 131.0
 margin_right = 63.0
 margin_bottom = 193.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 197.0
 margin_right = 63.0
 margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 263.0
 margin_right = 63.0
 margin_bottom = 325.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 329.0
 margin_right = 63.0
 margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_6" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 395.0
 margin_right = 63.0
 margin_bottom = 457.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_7" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 461.0
 margin_right = 63.0
 margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_8" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 527.0
 margin_right = 63.0
 margin_bottom = 589.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="Y_10" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_10"]
+[node name="Y_9" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/10x10/X_9"]
 margin_top = 593.0
 margin_right = 63.0
 margin_bottom = 655.0
@@ -1053,202 +995,202 @@ visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="X_1" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
-margin_right = 106.0
-margin_bottom = 550.0
+[node name="X_0" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
+margin_right = 128.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_0"]
+margin_right = 128.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_0"]
+margin_top = 131.0
+margin_right = 128.0
+margin_bottom = 259.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_0"]
+margin_top = 263.0
+margin_right = 128.0
+margin_bottom = 391.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_0"]
+margin_top = 395.0
+margin_right = 128.0
+margin_bottom = 523.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_0"]
+margin_top = 527.0
+margin_right = 128.0
+margin_bottom = 655.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="X_1" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
+margin_left = 132.0
+margin_right = 261.0
+margin_bottom = 655.0
+size_flags_horizontal = 3
+
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_1"]
+margin_right = 129.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
 [node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_1"]
-margin_right = 106.0
-margin_bottom = 106.0
+margin_top = 131.0
+margin_right = 129.0
+margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_1"]
-margin_top = 110.0
-margin_right = 106.0
-margin_bottom = 217.0
+margin_top = 263.0
+margin_right = 129.0
+margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_1"]
-margin_top = 221.0
-margin_right = 106.0
-margin_bottom = 328.0
+margin_top = 395.0
+margin_right = 129.0
+margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_1"]
-margin_top = 332.0
-margin_right = 106.0
-margin_bottom = 439.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_1"]
-margin_top = 443.0
-margin_right = 106.0
-margin_bottom = 550.0
+margin_top = 527.0
+margin_right = 129.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="X_2" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
-margin_left = 110.0
-margin_right = 217.0
-margin_bottom = 550.0
+margin_left = 265.0
+margin_right = 394.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_2"]
+margin_right = 129.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
 [node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_2"]
-margin_right = 107.0
-margin_bottom = 106.0
+margin_top = 131.0
+margin_right = 129.0
+margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_2"]
-margin_top = 110.0
-margin_right = 107.0
-margin_bottom = 217.0
+margin_top = 263.0
+margin_right = 129.0
+margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_2"]
-margin_top = 221.0
-margin_right = 107.0
-margin_bottom = 328.0
+margin_top = 395.0
+margin_right = 129.0
+margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_2"]
-margin_top = 332.0
-margin_right = 107.0
-margin_bottom = 439.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_2"]
-margin_top = 443.0
-margin_right = 107.0
-margin_bottom = 550.0
+margin_top = 527.0
+margin_right = 129.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="X_3" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
-margin_left = 221.0
-margin_right = 327.0
-margin_bottom = 550.0
+margin_left = 398.0
+margin_right = 527.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_3"]
+margin_right = 129.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
 [node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_3"]
-margin_right = 106.0
-margin_bottom = 106.0
+margin_top = 131.0
+margin_right = 129.0
+margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_3"]
-margin_top = 110.0
-margin_right = 106.0
-margin_bottom = 217.0
+margin_top = 263.0
+margin_right = 129.0
+margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_3"]
-margin_top = 221.0
-margin_right = 106.0
-margin_bottom = 328.0
+margin_top = 395.0
+margin_right = 129.0
+margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_3"]
-margin_top = 332.0
-margin_right = 106.0
-margin_bottom = 439.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_3"]
-margin_top = 443.0
-margin_right = 106.0
-margin_bottom = 550.0
+margin_top = 527.0
+margin_right = 129.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="X_4" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
-margin_left = 331.0
-margin_right = 438.0
-margin_bottom = 550.0
+margin_left = 531.0
+margin_right = 660.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 
+[node name="Y_0" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_4"]
+margin_right = 129.0
+margin_bottom = 127.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
 [node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_4"]
-margin_right = 107.0
-margin_bottom = 106.0
+margin_top = 131.0
+margin_right = 129.0
+margin_bottom = 259.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_4"]
-margin_top = 110.0
-margin_right = 107.0
-margin_bottom = 217.0
+margin_top = 263.0
+margin_right = 129.0
+margin_bottom = 391.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_4"]
-margin_top = 221.0
-margin_right = 107.0
-margin_bottom = 328.0
+margin_top = 395.0
+margin_right = 129.0
+margin_bottom = 523.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
 [node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_4"]
-margin_top = 332.0
-margin_right = 107.0
-margin_bottom = 439.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_4"]
-margin_top = 443.0
-margin_right = 107.0
-margin_bottom = 550.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="X_5" type="VBoxContainer" parent="CompletedPopup/ViewGrid/Grid/5x5"]
-margin_left = 442.0
-margin_right = 549.0
-margin_bottom = 550.0
-size_flags_horizontal = 3
-
-[node name="Y_1" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_5"]
-margin_right = 107.0
-margin_bottom = 106.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_2" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_5"]
-margin_top = 110.0
-margin_right = 107.0
-margin_bottom = 217.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_3" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_5"]
-margin_top = 221.0
-margin_right = 107.0
-margin_bottom = 328.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_4" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_5"]
-margin_top = 332.0
-margin_right = 107.0
-margin_bottom = 439.0
-size_flags_horizontal = 3
-size_flags_vertical = 3
-
-[node name="Y_5" type="ColorRect" parent="CompletedPopup/ViewGrid/Grid/5x5/X_5"]
-margin_top = 443.0
-margin_right = 107.0
-margin_bottom = 550.0
+margin_top = 527.0
+margin_right = 129.0
+margin_bottom = 655.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
@@ -1264,5 +1206,7 @@ margin_bottom = 110.0
 custom_fonts/font = SubResource( 8 )
 text = "Go back to main menu"
 
+[connection signal="pressed" from="Reset" to="Grid" method="ResetPuzzle"]
 [connection signal="pressed" from="CompletedPopup/Panel/MainMenu" to="CompletedPopup" method="GoToMainMenu"]
+[connection signal="pressed" from="CompletedPopup/Panel/ViewSolution" to="CompletedPopup" method="ShowCompletedPuzzle"]
 [connection signal="pressed" from="CompletedPopup/ViewGrid/MainMenu" to="CompletedPopup" method="GoToMainMenu"]

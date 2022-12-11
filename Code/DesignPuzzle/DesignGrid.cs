@@ -126,6 +126,7 @@ public class DesignGrid : Grid
 		}
 
 		ColorIsEnabled = colorShouldBeActive;
+		ResetGrid(currentSize);
 	}
 
 

@@ -259,6 +259,7 @@ dialog_text = "Failed to open file. Ensure that the file is a correct Nonogram J
 [connection signal="pressed" from="Buttons/PlayLoad2/LoadText" to="." method="ShowLoadFromText" binds= [ false ]]
 [connection signal="pressed" from="Buttons/PlayLoad/LoadFile" to="." method="ShowLoadFromFile" binds= [ true ]]
 [connection signal="pressed" from="Buttons/PlayLoad/LoadText" to="." method="ShowLoadFromText" binds= [ true ]]
+[connection signal="pressed" from="Buttons/Quit" to="." method="QuitApplication"]
 [connection signal="pressed" from="LoadText/Panel/Load" to="." method="LoadInText"]
 [connection signal="pressed" from="LoadText/Panel/Close" to="." method="CloseLoadText"]
 [connection signal="file_selected" from="LoadFile/FileDialog" to="." method="JsonFileSelected"]

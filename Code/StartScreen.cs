@@ -140,4 +140,11 @@ public class StartScreen : Panel
 	{
 		loadTextPanel.Visible = false;
 	}
+
+
+	private void QuitApplication()
+	{
+		GetTree().Quit();
+	}
 }
+

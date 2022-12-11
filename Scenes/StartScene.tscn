@@ -1,7 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Fonts/Linux_Biolinum.ttf" type="DynamicFontData" id=1]
-[ext_resource path="res://Fonts/BaseText.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Code/StartScreen.cs" type="Script" id=3]
 
 [sub_resource type="DynamicFont" id=1]
 size = 90
@@ -15,8 +15,38 @@ use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 1 )
 
+[sub_resource type="DynamicFont" id=7]
+size = 48
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
 [sub_resource type="DynamicFont" id=2]
 size = 48
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 48
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=4]
+size = 48
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=6]
+size = 24
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 32
 use_mipmaps = true
 use_filter = true
 font_data = ExtResource( 1 )
@@ -24,6 +54,7 @@ font_data = ExtResource( 1 )
 [node name="BaseDesktop" type="Panel"]
 anchor_right = 1.0
 anchor_bottom = 1.0
+script = ExtResource( 3 )
 
 [node name="Titel" type="Label" parent="."]
 anchor_right = 1.0
@@ -57,7 +88,7 @@ margin_top = 85.0
 margin_right = 768.0
 margin_bottom = 201.0
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = SubResource( 7 )
 text = "Create new Nonogram"
 
 [node name="PlayLoad2" type="HBoxContainer" parent="Buttons"]
@@ -122,5 +153,114 @@ margin_top = 628.0
 margin_right = 768.0
 margin_bottom = 745.0
 size_flags_vertical = 3
-custom_fonts/font = ExtResource( 2 )
+custom_fonts/font = SubResource( 8 )
 text = "Quit"
+
+[node name="LoadText" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 0.168627, 0.168627, 0.168627, 0.796078 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="LoadText"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -384.0
+margin_top = -134.0
+margin_right = 382.0
+margin_bottom = 81.0
+
+[node name="Label" type="Label" parent="LoadText/Panel"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -194.5
+margin_top = 8.0
+margin_right = 194.5
+margin_bottom = 63.0
+custom_fonts/font = SubResource( 4 )
+text = "Load from text"
+align = 1
+
+[node name="Line" type="LineEdit" parent="LoadText/Panel"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -359.0
+margin_top = -32.5
+margin_right = 363.0
+margin_bottom = 16.5
+custom_fonts/font = SubResource( 6 )
+placeholder_text = "Copy a generated JSON string here..."
+
+[node name="Load" type="Button" parent="LoadText/Panel"]
+anchor_left = 0.746736
+anchor_top = 0.618605
+anchor_right = 0.969974
+anchor_bottom = 0.873329
+margin_top = 8.0
+margin_bottom = 14.2342
+rect_pivot_offset = Vector2( 86, 45 )
+custom_fonts/font = SubResource( 5 )
+text = "Load"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Close" type="Button" parent="LoadText/Panel"]
+anchor_left = 0.0365531
+anchor_top = 0.618605
+anchor_right = 0.259791
+anchor_bottom = 0.873329
+margin_top = 8.0
+margin_bottom = 14.2342
+rect_pivot_offset = Vector2( 86, 45 )
+custom_fonts/font = SubResource( 5 )
+text = "Close"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="LoadFile" type="Panel" parent="."]
+visible = false
+self_modulate = Color( 0.168627, 0.168627, 0.168627, 0.796078 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="FileDialog" type="FileDialog" parent="LoadFile"]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -390.0
+margin_top = -221.5
+margin_right = 390.0
+margin_bottom = 221.5
+window_title = "Open a File"
+mode = 0
+
+[node name="LoadFileError" type="AcceptDialog" parent="LoadFile"]
+visible = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -225.0
+margin_top = -34.0
+margin_right = 243.0
+margin_bottom = 24.0
+dialog_text = "Failed to open file. Ensure that the file is a correct Nonogram JSON file."
+
+[connection signal="pressed" from="Buttons/Create" to="." method="ShowEditor"]
+[connection signal="pressed" from="Buttons/PlayLoad2/LoadFile" to="." method="ShowLoadFromFile" binds= [ false ]]
+[connection signal="pressed" from="Buttons/PlayLoad2/LoadText" to="." method="ShowLoadFromText" binds= [ false ]]
+[connection signal="pressed" from="Buttons/PlayLoad/LoadFile" to="." method="ShowLoadFromFile" binds= [ true ]]
+[connection signal="pressed" from="Buttons/PlayLoad/LoadText" to="." method="ShowLoadFromText" binds= [ true ]]
+[connection signal="pressed" from="LoadText/Panel/Load" to="." method="LoadInText"]
+[connection signal="pressed" from="LoadText/Panel/Close" to="." method="CloseLoadText"]
+[connection signal="file_selected" from="LoadFile/FileDialog" to="." method="JsonFileSelected"]
+[connection signal="hide" from="LoadFile/FileDialog" to="." method="CloseLoadFile"]
+[connection signal="confirmed" from="LoadFile/LoadFileError" to="." method="CloseLoadFile"]

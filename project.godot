@@ -15,6 +15,10 @@ run/main_scene="res://Scenes/StartScene.tscn"
 boot_splash/show_image=false
 config/icon="res://Assets/icon.png"
 
+[autoload]
+
+VariableHolder="*res://Code/VariableHolder.cs"
+
 [display]
 
 window/size/width=1920

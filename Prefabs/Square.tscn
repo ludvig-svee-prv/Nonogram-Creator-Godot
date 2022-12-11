@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Assets/Cross.png" type="Texture" id=1]
-[ext_resource path="res://Code/GridSquare.cs" type="Script" id=2]
+[ext_resource path="res://Code/BaseCode/GridSquare.cs" type="Script" id=2]
 
 [node name="Y_0" type="ColorRect"]
 margin_right = 56.0

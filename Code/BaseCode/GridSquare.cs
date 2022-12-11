@@ -8,20 +8,17 @@ public class GridSquare : ColorRect
 	int x;
 	int y;
 
-	private Color standardColor = new Color(1,1,1);
 	private TextureRect cross;
 
-	public bool CrossIsShowing { 
-		get {
+	public bool CrossIsShowing
+	{
+		get
+		{
 			return cross.Visible;
 		}
 	}
 
-	public bool ColorHasBeenChanged{
-		get {
-			return !this.Color.Equals(standardColor);
-		}
-	}
+	public int CurrentColorIndex { get; private set; }
 
 	public override void _Ready()
 	{
@@ -65,19 +62,31 @@ public class GridSquare : ColorRect
 		connectedGrid.SquareClickedErase(x, y);
 	}
 
-	public void ToggleCross()
+	public void ShowCross()
 	{
-		cross.Visible = !cross.Visible;
+		cross.Visible = true;
+	}
+
+	public void HideCross()
+	{
+		cross.Visible = false;
+	}
+
+	public void ResetSquare()
+	{
+		HideCross();
+		ResetColor();
 	}
 
 	public void ResetColor()
 	{
-		SetColor(standardColor);
+		SetColor(0);
 	}
 
-	public void SetColor(Color c)
+	public void SetColor(int colorIndex)
 	{
-		Color = c;
+		CurrentColorIndex = colorIndex;
+		Color = ColorEnabler.ColorIndexLookup(CurrentColorIndex);
 	}
 }
 

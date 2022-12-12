@@ -241,6 +241,7 @@ margin_right = 390.0
 margin_bottom = 221.5
 window_title = "Open a File"
 mode = 0
+access = 2
 
 [node name="LoadFileError" type="AcceptDialog" parent="LoadFile"]
 visible = true

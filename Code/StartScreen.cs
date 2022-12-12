@@ -44,6 +44,7 @@ public class StartScreen : Panel
 	{
 		loadingPuzzleForPlay = isForPlay;
 		loadFileDialog.Visible = true;
+		loadFileDialog.CurrentPath = OS.GetExecutablePath() + "../";
 		loadFilePanel.Visible = true;
 	}
 

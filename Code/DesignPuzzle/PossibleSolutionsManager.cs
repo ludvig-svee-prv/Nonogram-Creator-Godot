@@ -139,6 +139,9 @@ public class PossibleSolutionsManager
 		for (int h = 0; h < lineHints.Length; h++)
 		{
 			ColorHint hint = lineHints[h];
+			if (currentSquare >= verticalLines.Length){
+				return false;
+			}
 
 			if (hint.IsEmptyHint)
 			{

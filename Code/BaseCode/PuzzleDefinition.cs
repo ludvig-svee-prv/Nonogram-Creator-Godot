@@ -215,10 +215,15 @@ public class PuzzleDefinition
                 }
             }
 
-            if (currentLine.Count == 0)
+
+            if (currentCount != 0)
+            {
+                currentLine.Add(new ColorHint(currentCount, 1));
+            } 
+            else if (currentLine.Count == 0)
             {
                 currentLine.Add(new ColorHint(0, 0));
-            }
+            }   
 
             lines.Add(currentLine.ToArray());
         }
